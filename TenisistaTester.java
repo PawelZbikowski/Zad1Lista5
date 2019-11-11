@@ -37,7 +37,7 @@ public class TenisistaTester {
             e.printStackTrace();
         }
 
-
+        //Utworzenie listy tablicowej players i umieszczenie w niej obiektów klasy Tenisista
         ArrayList<Tenisista> players = new ArrayList<>();
         for (int i = 0; i < tennisPlayers.size(); i+= 7) {
             Tenisista tenisista = new Tenisista(Integer.parseInt(tennisPlayers.get(i)), tennisPlayers.get(i+1),
@@ -48,7 +48,9 @@ public class TenisistaTester {
 
         }
 
-        System.out.println(players);
+        //Sortowanie listy obiektów po wieku, kraju pochodzenia, imieniu, punktach, nazwisku,
+        // pozycji (miejscu w rankingu) i liczbie rozegranych turniejów
+        System.out.println("Tablica przed posorotwaniem: " + players);
         System.out.println();
         Collections.sort(players, new PlayerAgeComparator());
         System.out.println("Tablica posortowana rosnąco po wieku zawodników: " + players);

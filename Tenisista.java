@@ -50,7 +50,7 @@ public class Tenisista implements Comparable<Tenisista>{
 
     @Override
     public String toString() {
-        return "Player {" +
+        return "PLAYER {" +
                 "position = " + position +
                 ", nationality = '" + nationality + '\'' +
                 ", name = '" + name + '\'' +
